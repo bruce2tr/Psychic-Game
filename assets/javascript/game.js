@@ -47,6 +47,7 @@ document.onkeyup = function(event) {
             //guessesLeft goes down by one here
             guessesLeft = guessesLeft-1;
             console.log("guesses" + guessesLeft);
+           
 
             //need to add the guess to the array. 
             
@@ -75,7 +76,7 @@ document.onkeyup = function(event) {
     
         }
     else {
-    console.log("Pick a letter a-z!");
+    alert("Pick a letter a-z!");
     }
 }
 
