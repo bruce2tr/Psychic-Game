@@ -53,6 +53,7 @@ document.onkeyup = function(event) {
             
 
             if(guessesLeft == 0){
+                losses = losses + 1;
                 reset();
             }
             // else{
