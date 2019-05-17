@@ -36,8 +36,7 @@ document.onkeyup = function(event) {
             wins = wins+1;
             var grabWins = document.getElementById("winsID");
             grabWins.innerHTML = "Wins: " + wins;
-            var grabLosses = document.getElementById("lossesID");
-            grabLosses.innerHTML = "Losses: " + losses;
+            
 
             //since the user wins need to reset gueesses to 9 and guess a new letter here 
             reset();
@@ -54,6 +53,8 @@ document.onkeyup = function(event) {
 
             if(guessesLeft == 0){
                 losses = losses + 1;
+                var grabLosses = document.getElementById("lossesID");
+                grabLosses.innerHTML = "Losses: " + losses;
                 reset();
             }
             // else{
